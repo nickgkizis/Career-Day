@@ -16,9 +16,9 @@ body {
 
 .card {
   background: #ffffff;
-  width: 400px;
+  width: 600px;
   max-width: 95%;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -29,7 +29,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.4rem;
-  margin-top: 0.5rem;
 }
 
 .contact-item {
@@ -42,22 +41,21 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 2rem;
   text-decoration: none;
   color: #fff;
   background: #3b3f58;
-  padding: 1.1rem 1.6rem;
+  padding: 3rem 4rem;
   border-radius: 8px;
-  font-size: 3rem;
+  font-size: 7rem;
   font-weight: 400;
   width: 100%;
-  max-width: 340px;
+  /* max-width: 340px; */
   text-align: center;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .contact-button i {
-  font-size: 3rem;
+  font-size: 7rem;
 }
 
 .contact-button:hover {
@@ -71,7 +69,7 @@ body {
   box-shadow: 0 3px 6px rgba(84, 91, 123, 0.2);
 }
 
-@media (max-width: 300px) {
+/* @media (max-width: 500px) {
   body {
     height: auto;
   }
@@ -85,10 +83,10 @@ body {
   }
   .contact-button {
     max-width: 100% !important;
-    font-size: 3rem;
+    font-size: 8rem;
     padding: 1.4rem 1.2rem;
   }
   .contact-button i {
     font-size: 4rem;
   }
-}
+} */
