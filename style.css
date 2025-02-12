@@ -6,7 +6,7 @@
 
 body {
   /* Darker gradient background */
-  background: linear-gradient(130deg, #12172f 0%, #1e2746 100%);
+  background: linear-gradient(130deg, #000000 0%, #0022ff 33%,#00aaff 66%, #000000 100%);
   font-family: sans-serif;
   display: flex;
   justify-content: center;
