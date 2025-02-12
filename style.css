@@ -6,12 +6,38 @@
 
 body {
   /* Darker gradient background */
-  background: linear-gradient(130deg, #000000 0%, #0022ff 33%,#00aaff 66%, #000000 100%);
+  background: linear-gradient(
+    130deg,
+    #000000 0%,
+    #0022ff 33%,
+    #000000 50%,
+    #00aaff 66%,
+    #000000 100%
+  );
+
+  /* Make the gradient larger than the viewport to allow movement */
+  background-size: 400% 400%;
+
+  /* Animate the background position */
+  animation: gradientShift 10s ease infinite;
+
   font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .card {
@@ -50,7 +76,6 @@ body {
   font-size: 7rem;
   font-weight: 400;
   width: 100%;
-  /* max-width: 340px; */
   text-align: center;
 }
 
@@ -69,7 +94,8 @@ body {
   box-shadow: 0 3px 6px rgba(84, 91, 123, 0.2);
 }
 
-/* @media (max-width: 500px) {
+/* Example responsive styles
+@media (max-width: 500px) {
   body {
     height: auto;
   }
