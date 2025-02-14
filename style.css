@@ -1,3 +1,4 @@
+/* Base styles (for mobile) */
 * {
   margin: 0;
   padding: 0;
@@ -5,22 +6,18 @@
 }
 
 body {
-  /* Darker gradient background */
   background: linear-gradient(
     130deg,
-    #000000 0%,
+    #ffffff 0%,
+    #000000 15%,
     #0022ff 33%,
     #000000 50%,
     #00aaff 66%,
-    #000000 100%
+    #000000 85%,
+    #ffffff 100%
   );
-
-  /* Make the gradient larger than the viewport to allow movement */
   background-size: 400% 400%;
-
-  /* Animate the background position */
-  animation: gradientShift 10s ease infinite;
-
+  animation: gradientShift 20s ease infinite;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -48,6 +45,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  opacity: 0.9;
+}
+
+.card:hover {
+  opacity: 1;
 }
 
 .contact-list {
@@ -94,25 +96,23 @@ body {
   box-shadow: 0 3px 6px rgba(84, 91, 123, 0.2);
 }
 
-/* Example responsive styles
-@media (max-width: 500px) {
-  body {
-    height: auto;
-  }
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+  /* Reduce the card width */
   .card {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 1rem;
-    margin: 0;
+    width: 30%;
+    height: auto;
+    padding: 0.5rem;
+    gap: 0;
   }
+
+  /* Scale down the button font size and padding */
   .contact-button {
-    max-width: 100% !important;
-    font-size: 8rem;
-    padding: 1.4rem 1.2rem;
+    font-size: 2.5rem;
+    padding: 2rem;
   }
+
   .contact-button i {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-} */
+}
