@@ -114,11 +114,10 @@ body {
 @media (max-width: 600px) {
   /* Reduce the card width */
   .card {
-    width: 60% !important;
+    width: 65% !important;
     height: auto;
     padding: 0.3rem;
     margin: 0;
-    padding: 1.3rem;
     border: 1px solid transparent;
   }
 
