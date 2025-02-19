@@ -11,13 +11,13 @@ body {
     #ffffff 0%,
     #000000 15%,
     #0022ff 33%,
-    #000000 50%,
+    #382f2f 50%,
     #00aaff 66%,
     #000000 85%,
     #ffffff 100%
   );
   background-size: 400% 400%;
-  animation: gradientShift 20s ease infinite;
+  animation: gradientShift 15s ease infinite;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -37,15 +37,22 @@ body {
   }
 }
 
+.contact-item a{
+  font-size: 3rem !important;
+}
+
 .card {
-  background: #ffffff;
-  width: 600px;
-  max-width: 95%;
-  padding: 1rem;
+  background:transparent;
+  width: 350px;
+  /* max-width: 95%; */
+  height:fit-content;
+  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   opacity: 0.9;
+  border: 2px solid #444965;
+
 }
 
 .card:hover {
@@ -72,23 +79,29 @@ body {
   gap: 2rem;
   text-decoration: none;
   color: #fff;
-  background: #3b3f58;
-  padding: 3rem 4rem;
+  background: #545b7b;
+  padding: 1rem 2rem;
   border-radius: 8px;
-  font-size: 7rem;
+  font-size: 3rem;
   font-weight: 400;
   width: 100%;
   text-align: center;
+  transition:all 1s ease-in-out;
 }
 
 .contact-button i {
-  font-size: 7rem;
+  font-size: 3rem;
 }
 
 .contact-button:hover {
-  background: #545b7b;
+  background: #444965;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(84, 91, 123, 0.2);
+  box-shadow: 0 6px 12px rgba(81, 88, 118, 0.2);
+}
+
+.contact-button:hover i{
+  color: #000000;
+  transition: all 1s ease-in-out;
 }
 
 .contact-button:active {
@@ -96,23 +109,43 @@ body {
   box-shadow: 0 3px 6px rgba(84, 91, 123, 0.2);
 }
 
+
 /* Desktop adjustments */
-@media (min-width: 1024px) {
+@media (max-width: 600px) {
   /* Reduce the card width */
   .card {
-    width: 30%;
+    width: 60% !important;
     height: auto;
-    padding: 0.5rem;
-    gap: 0;
+    padding: 0.3rem;
+    margin: 0;
+    padding: 1.3rem;
+    border: 1px solid transparent;
   }
 
-  /* Scale down the button font size and padding */
+  .contact-list{
+    gap:0;
+  }
+
+  .contact-item a{
+    font-size: 2rem !important;
+    margin: 0.2rem;
+    display: flex;
+    align-items:end;
+    justify-content:space-between;
+  }
+
+  /* .contact-item i{
+    display: flex;
+    align-items:end;
+    justify-content:end !important;
+  } */
+
   .contact-button {
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 1rem;
+    padding: 1rem;
   }
 
   .contact-button i {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }

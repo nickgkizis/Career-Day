@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Info</title>
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome -->
@@ -15,8 +16,8 @@
 <body>
   <div class="card">
     <div class="contact-list">
-      <!-- CV Section (Locked by default) -->
-      <div class="contact-item" id="cv-section" style="display: none;">
+  
+      <div class="contact-item" id="cv-section">
         <a
           href="https://drive.google.com/file/d/1dHSmVNoN0KMRQ7xeFPCmvWu6SO_Qd57-/view?usp=drive_link"
           class="contact-button"
@@ -24,16 +25,16 @@
           rel="noopener noreferrer"
           aria-label="View my CV"
         >
-          <i class="fas fa-file-alt"></i> CV
+          <i class="fas fa-file-alt"></i> <div class="transparent">CV</div>
         </a>
       </div>
 
       <!-- Unlock CV Button -->
-      <div class="contact-item">
+      <!-- <div class="contact-item">
         <button class="contact-button" id="unlock-btn">
-          <i class="fas fa-lock"></i> Unlock CV
+          <i class="fas fa-file-alt"></i>CV<i class="fas fa-lock"></i>
         </button>
-      </div>
+      </div> -->
 
       <!---->
       <div class="contact-item">
